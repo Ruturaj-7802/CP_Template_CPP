@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define endl '\n'
+#define test ll t; cin >> t; while(t--) 
+#define vec(ver, n)  vector<ll> ver(n); for (ll i = 0; i < n; i++) cin >> ver[i];
+#define pb push_back
+#define all(x) (x).begin(),(x).end()
+bool pow2(ll n)
+{
+    if(n==0) return false;
+    return (ceil(log2(n)) == floor(log2(n)));
+}
+const int32_t N=1e5+10;
+const long long INF=1e18 + 2;
+const long long _INF=-1e18;
+const int32_t mod=1000000007;
+const int32_t MM=998244353;
+
+
+ll bin_expo(ll x, ll y) { ll res = 1; while (y) {if (y % 2) res = (res * x % mod) % mod; x = (x * x) % mod; y /= 2; } return res;}
+ll mod_inv(ll x) {return bin_expo(x, mod - 2);}
+ll mod_add(ll a, ll b) {a = a % mod; b = b % mod; return (((a + b) % mod) + mod) % mod;}
+ll mod_mul(ll a, ll b) {a = a % mod; b = b % mod; return (((a * b) % mod) + mod) % mod;}
+ll mod_sub(ll a, ll b) {a = a % mod; b = b % mod; return (((a - b) % mod) + mod) % mod;}
+ll mod_div(ll a, ll b) {a = a % mod; b = b % mod; return (mod_mul(a, mod_inv(b)) + mod) % mod;}
+
+// ll fact[N]={}; rep(i,1,N) fact[i] = mod_mul(fact[i-1],i,mod);
+// ll nCr(ll n,ll r) return mod_mul(mod_mul(fact[n],mod_inv(fact[r],mod),mod),mod_inv(fact[n-r],mod),mod);
+
+
+signed main(){
+    fastio
+    test{
+              
+    }  
+    return 0;
+}
